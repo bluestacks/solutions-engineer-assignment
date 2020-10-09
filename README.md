@@ -12,11 +12,13 @@ A typical tournament workflow looks like this:
 5. Once a match ends, its results are updated.
 6. If a player wins their match, they advance in the tournament, and if they lose, they are out of the tournament.
 
-The goal of the integration is that tournaments run seamlessly for both the players and tournament hosts so they don’t have to do anything manually.
+Some of the steps necessarily need to involve the game that the tournament is for, while some of them can be taken care of by the game.tv app itself. The goal of the game integration is that tournaments run seamlessly for both the players and tournament hosts so they don’t have to do anything manually.
 
-We need you to prepare an API document to support such a workflow. It would help to have a flowchart and/or sequence diagram as well.
+We need you to prepare an API document that we can share with a game developer to support such a workflow. It would help to have a flowchart and/or sequence diagram as well.
+
+**Note:** Please don’t try to create APIs to replicate the above workflow verbatim. We are more interested in the pieces that involve the game and what we can do there.
+**Example:** when a tournament ends, we might call an api provided by the game developer to send in-game rewards to the winners.
 
 Bonus:
 1. Design a system diagram for how this integration would work at scale
 2. Prepare the API document using a tool like Swagger or Slate
-
